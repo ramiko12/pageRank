@@ -1,0 +1,264 @@
+
+Query 1
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 5
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 2
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 3
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 3
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 6
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 4
+	Relevant documents retrieved: 2.0 / Total relevant documents in query: 12
+	R-Precision = 0.16666666666666666
+	MAP Value = 0.06448412698412699
+
+Query 5
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 8
+	R-Precision = 0.125
+	MAP Value = 0.03405688751741088
+
+Query 6
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 3
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 7
+	Relevant documents retrieved: 5.0 / Total relevant documents in query: 28
+	R-Precision = 0.17857142857142858
+	MAP Value = 0.06408387817057916
+
+Query 8
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 3
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 9
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 9
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 10
+	Relevant documents retrieved: 11.0 / Total relevant documents in query: 35
+	R-Precision = 0.3142857142857143
+	MAP Value = 0.2675765501175042
+
+Query 11
+	Relevant documents retrieved: 6.0 / Total relevant documents in query: 19
+	R-Precision = 0.3157894736842105
+	MAP Value = 0.15629518648455723
+
+Query 12
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 5
+	R-Precision = 0.2
+	MAP Value = 0.10883458646616542
+
+Query 13
+	Relevant documents retrieved: 3.0 / Total relevant documents in query: 11
+	R-Precision = 0.2727272727272727
+	MAP Value = 0.18141714607231849
+
+Query 14
+	Relevant documents retrieved: 16.0 / Total relevant documents in query: 44
+	R-Precision = 0.36363636363636365
+	MAP Value = 0.17893256882985453
+
+Query 15
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 10
+	R-Precision = 0.1
+	MAP Value = 0.04945130193168971
+
+Query 16
+	Relevant documents retrieved: 3.0 / Total relevant documents in query: 17
+	R-Precision = 0.17647058823529413
+	MAP Value = 0.03999598305146274
+
+Query 17
+	Relevant documents retrieved: 4.0 / Total relevant documents in query: 16
+	R-Precision = 0.25
+	MAP Value = 0.10289929934382652
+
+Query 18
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 11
+	R-Precision = 0.09090909090909091
+	MAP Value = 0.022864015021243037
+
+Query 19
+	Relevant documents retrieved: 2.0 / Total relevant documents in query: 11
+	R-Precision = 0.18181818181818182
+	MAP Value = 0.09924813955720327
+
+Query 20
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 3
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 21
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 11
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 22
+	Relevant documents retrieved: 6.0 / Total relevant documents in query: 17
+	R-Precision = 0.35294117647058826
+	MAP Value = 0.4151441951441952
+
+Query 23
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 4
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 24
+	Relevant documents retrieved: 2.0 / Total relevant documents in query: 13
+	R-Precision = 0.15384615384615385
+	MAP Value = 0.10017094017094018
+
+Query 25
+	Relevant documents retrieved: 15.0 / Total relevant documents in query: 51
+	R-Precision = 0.29411764705882354
+	MAP Value = 0.13025809039768024
+
+Query 26
+	Relevant documents retrieved: 11.0 / Total relevant documents in query: 30
+	R-Precision = 0.36666666666666664
+	MAP Value = 0.26196376163092167
+
+Query 27
+	Relevant documents retrieved: 8.0 / Total relevant documents in query: 29
+	R-Precision = 0.27586206896551724
+	MAP Value = 0.08621291728786655
+
+Query 28
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 5
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 29
+	Relevant documents retrieved: 11.0 / Total relevant documents in query: 19
+	R-Precision = 0.5789473684210527
+	MAP Value = 0.6405231056769058
+
+Query 30
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 4
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 31
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 2
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 32
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 3
+	R-Precision = 0.3333333333333333
+	MAP Value = 0.19013605442176873
+
+Query 33
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 1
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 36
+	Relevant documents retrieved: 4.0 / Total relevant documents in query: 20
+	R-Precision = 0.2
+	MAP Value = 0.07385382676898733
+
+Query 37
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 12
+	R-Precision = 0.08333333333333333
+	MAP Value = 0.09466044760772348
+
+Query 38
+	Relevant documents retrieved: 5.0 / Total relevant documents in query: 16
+	R-Precision = 0.3125
+	MAP Value = 0.1383367596800327
+
+Query 39
+	Relevant documents retrieved: 2.0 / Total relevant documents in query: 12
+	R-Precision = 0.16666666666666666
+	MAP Value = 0.0882033069489278
+
+Query 40
+	Relevant documents retrieved: 2.0 / Total relevant documents in query: 10
+	R-Precision = 0.2
+	MAP Value = 0.07222483683308425
+
+Query 42
+	Relevant documents retrieved: 2.0 / Total relevant documents in query: 21
+	R-Precision = 0.09523809523809523
+	MAP Value = 0.017842455686558845
+
+Query 43
+	Relevant documents retrieved: 8.0 / Total relevant documents in query: 41
+	R-Precision = 0.1951219512195122
+	MAP Value = 0.05035107812012042
+
+Query 44
+	Relevant documents retrieved: 2.0 / Total relevant documents in query: 17
+	R-Precision = 0.11764705882352941
+	MAP Value = 0.020397249809014518
+
+Query 45
+	Relevant documents retrieved: 8.0 / Total relevant documents in query: 26
+	R-Precision = 0.3076923076923077
+	MAP Value = 0.19914234891047014
+
+Query 48
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 12
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 49
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 8
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 57
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 1
+	R-Precision = 1.0
+	MAP Value = 1.0
+
+Query 58
+	Relevant documents retrieved: 5.0 / Total relevant documents in query: 30
+	R-Precision = 0.16666666666666666
+	MAP Value = 0.09430993763576065
+
+Query 59
+	Relevant documents retrieved: 13.0 / Total relevant documents in query: 43
+	R-Precision = 0.3023255813953488
+	MAP Value = 0.13442188439147013
+
+Query 60
+	Relevant documents retrieved: 5.0 / Total relevant documents in query: 27
+	R-Precision = 0.18518518518518517
+	MAP Value = 0.09584206730895142
+
+Query 61
+	Relevant documents retrieved: 9.0 / Total relevant documents in query: 31
+	R-Precision = 0.2903225806451613
+	MAP Value = 0.1769219020679517
+
+Query 62
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 8
+	R-Precision = 0.0
+	MAP Value = 0.0
+
+Query 63
+	Relevant documents retrieved: 1.0 / Total relevant documents in query: 12
+	R-Precision = 0.08333333333333333
+	MAP Value = 0.039912281580638566
+
+Query 64
+	Relevant documents retrieved: 0.0 / Total relevant documents in query: 1
+	R-Precision = 0.0
+	MAP Value = 0.0
+Average R-Precision over 64 queries = 0.2837942566288871
+Average MAP Value over 64 queries = 0.15252691993410872
+
+Time required to create MAP and R-Precision values: 26 seconds

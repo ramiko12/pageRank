@@ -1,0 +1,96 @@
+Project Report 
+
+Names: Ramy El Khayat &  Rabih Talaba 
+
+
+File Breakdown 
+
+Document.java 
+
+this file does the abstraction of the document it includes all the getters and setters methods
+it also holds every document's citation set , name , id , date , author and it also holds the terms for every document and their tfidf weigths 
+
+DocumentFrequency.java
+
+a basic class to update the document frequency in the inverting process 
+
+Eval.java
+
+Conducts the evaluation on the system by comparing the queries in the query.text to the qrels.txt (which contains the relevant documents for the query ) using this information allows us to calculate the R-precision and MAP value for each query and then average the results and evaluate the system as a whole , this file also conducts the simirality score calculation and pageRank calculation which i will explain later 
+
+FileParser.java
+
+This is another major file in the system as it parses the cacm.all file and allocates the documents with the proper information such as ID, date , author etc it uses a while loop to go through the file and allocates information based on the flags in the file
+
+
+
+Invert.java (major key)
+
+A major player in this project as it creates the postings list and dictionairy for the terms in the document collection which is then used to calculate the simiarity scores.
+
+
+Posting.java 
+
+This file represents an entry in the postings list and was made to make it easier to create the postings list
+
+
+
+Query.java 
+
+This file is just a place holder for a query with simple query get and set methods for the query file evaluation. Represents what a query is and it helps in the evaluation process when we read queries from a file.
+
+
+RelevanceScore.java
+
+Just a container file for sorting documents by their score.
+
+Search.java (major file)
+
+This file allows users to interact with the system by enetering queries which then the system splits into terms and calculates similarity scores with the documents to retrieve the relevant ones (cosine similarity is used alongside pageRanks with  probabilty of 0.85 )
+
+Stemmer.java 
+
+Porter stemmer that returns words to their origin (user is prompted to decide if he wants stemming on or off) Stemmer was provided by http://www.tartarus.org/~martin/PorterStemmer
+
+stopwords.txt : containts the stopWords
+
+eval.txt : returns the evaluation of the system
+pagerank.txt : saves the pagerank scores for all cacm documents 
+
+
+cacm.all : the collection of documents
+qrels: contains the relevant docs per query 
+query.text contains test queries for evaluation 
+
+
+
+
+Major methods 
+
+calculatePageRank()
+
+this method calculates the pageRanks scores using the power iteration method (50  iterations) by using the citationSet of each document and calculating the probability matrix 'P' and then use that to calculate the xP matrix based on how many iterations are defined and it also assigns the scores to the documents and writes them to file (pagerank.txt)
+
+
+sim(doc,queryDoc)
+
+this calculalates the cosine similarity between a document and a query 
+
+
+setTFidfWeights()
+
+calculates the tf and idf scores for each term
+
+score(doc,query)
+
+combines the cosine similarity score with the pageRank score=(w1*cos-score(d, q) + w2*pagerank(d) where w1+w2=1)  also the score is multiplied by 100 to normalize the small numbers.
+
+
+To compile simply run java *.java 
+and then run 'java Search' for searching 
+or java Eval for evaluation
+
+
+
+
+

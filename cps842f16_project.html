@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+<center>
+<h2>CPS842: Information Retrieval and Web Search</h2>
+
+<h2>Fall 2016</h2>
+</center>
+<hr/>
+
+<center><h3>Project (Due: Dec. 1, 2016)</h3></center>
+
+<p><u>Project Ideas:</u><br/>
+You can choose the project idea from the following list, or propose your own as long as it is related to the course topic and the workload is adequate. In the latter case, you need to email me a short proposal by <b>Nov. 13, 2016</b>.</p>
+
+<p>1.
+Continue with assignments 1 and 2. You need to use the CACM collection again. This time you will use the information from the citation field (.X). Write a program to implement the PageRank algorithm. The input is the file with the citation information from the CACM collection. The output is the file with PageRank scores for all documents in CACM. The damping factor (the probability to follow a random link) could be either fixed in the program or taken as an input parameter. A common value is 0.85. You can use the Power Iteration method to implement the algorithm. Other implementation is also allowed. Modify the <b>search</b> program from assignment 2. Now the ranking is based on not only the vector space model, but also the PageRank score. Use the linear combination to combine the cosine similary score with the PageRank score as following: score(d, q) = w1*cos-score(d, q) + w2*pagerank(d) where w1+w2=1. Note that w1 and w2 should be set as input parameters. If the PageRank score is too low, you could normalize it first before combining it with the cosine similarity score. Run <b>eval</b> program from assignment 2, repeat step 4 in assignment 2 with the new <b>search</b> program, and get the new result. The w1, w2 values you need to test will be: (0.5, 0.5), (0.7, 0.3). 
+</p>
+<p><i>Note:</i>
+You might need to rewrite your <b>invert</b> program from assignment 1 in order to extract the links between the documents. For the citation field (.X), each line has three numbers (for the full meaning of these numbers, you can refer to cite.info), and you only need to keep the lines with the middle number equal to 5. 
+</p>
+
+<p>2.
+Implement a focused crawler. A focused crawler is a crawler only downloading web pages on a certain given topic. To define the initial seed set, you can start from a few known web pages on this topic, or web sites from <a rel="noopener" href="http://www.dmoz.org/" target="_blank">DMOZ</a>. Your crawler should only crawl pages which are relevant to this topic. The relevancy could be decided by the similarity between the web page and the topic or the pages in the seed set. Since before crawling, you may not have the complete document yet, you can use the anchor text and the anchor window text (the text surrounding the anchor text). A threshold value could be defined for the relevancy judgment. You should strictly follow the <b>Robots Exclusion Protocol</b> during the crawling process. In your final report, you need to explain the stop criteria you use to stop the crawling process, how you follow the Robots Exclusion Protocol, the size of the crawled set of documents (in terms of the number of documents and the total number of bytes), and the time your program takes to complete the crawling process. 
+</p>
+<p>
+<i>Note:</i>
+Keep in mind that many HTML pages are not well-defined (not following the HTML specification strictly), your parser should be robust enough to handle this kind of pages.
+</p>
+
+<p>3.
+Build your own search engine. You can develop your own crawler or use an existing crawler such as <a rel="noopener" href="http://nutch.apache.org/" target="_blank">Nutch</a> or <a rel="noopener" href="http://www.gnu.org/s/wget/" target="_blank">Wget</a> to crawl the web. You can decide the starting seed set, which could be a set of pages you are interested in, or pages from web directories such as <a rel="noopener" href="http://www.dmoz.org/" target="_blank">DMOZ</a>. You can use a free HTML parser to parse the HTML pages and then use your indexing program from assignment 1 to build the inverted index. You may need to modify the program because the web collection is different from the CACM collection. Your search engine should have a web interface to accept keyword-based queries. The results returned to the user should be ranked. You can use the vector space model to implement the ranking algorithm. You should also implement a link-based ranking algorithm such as PageRank. The final ranking score would be the combination of the two. In this project, you are allowed to use an existing implementation of PageRank (e.g., <a rel="noopener" href="http://jung.sourceforge.net/doc/api/edu/uci/ics/jung/algorithms/scoring/PageRank.html" target="_blank">Jung</a>), if you choose to do so, you need to cite the source in your report. 
+</p>
+<p>
+<i>Note:</i>
+You can restrict your search engine to only support HTML pages. For this project, you will get bonus mark (2 marks).
+</p>
+
+<p>4. 
+Implement a meta search engine. Meta search engine is a search engine which is built on top of a few existing search engines. It has a search interface which could accept queries from users. Upon receiving queries, it will send them in parallel to the underlying search engines and get the results back, and the next step is to use a combination or aggregation algorithm to combine all the results into a single ranked list and return it to users. For example, if a meta search engine is built based on Google and Bing, when it receives a query from a user, it will send this query to both Google and Bing in parallel, then combine the results from both search engines into one single result list and return to the user. <a rel="noopener" href="http://www.dogpile.com/" target="_blank">Dogpile</a> is such an example. One of the rank aggregation algorithm you could consider to use is Borda Fuse. There are more such algorithms. If you are interested, you can discuss with me to find more information.
+</p>
+<p>
+<i>Note:</i>
+You could define how many results you want to keep from each engine, and you can also set up a time-out value in case there is no response from a search engine. When the query is sent to an underlying search engine, it should be converted to a proper format accepted by that engine. This project also requires a web interface for query submission.
+</p>
+
+<p>5.
+Implement a movie recommender system. Set up a web site in which a user can rate a movie he/she has watched. You can import the movie titles and other related information from IMDB. The rating is a number between 0 and 5. After you collect a certain amount of rating information from users, you can run the recommender system, which will then base on the previous ratings given by the user, recommend new movies to the user. You can use the collaborative filtering algorithm for recommendation. The main idea is that if two users (<i>A</i> and <i>B</i>) rated movies similarly, they have similar interest/taste/preference on movies, then if a movie highly rated by user <i>A</i> hasn&#39;t been watched by <i>B</i> yet, your system can recommend this movie to <i>B</i>. 
+</p>
+
+<p><u>Requirements:</u><br/>
+You should submit a zipped file (i.e. cps842f16_prj_yourlastname.zip) to the course web site, including the report (e.g. the functions implemented in your system, the detailed design of your system, etc.), the source code of all programs, the executable programs and the result files (PageRank score file and evaluation result files for project idea 1, the crawled document collection for project idea 2, the collected user rating data and the user similarity matrix in project idea 5, and a few representative screenshots of running the system for other project ideas). 
+</p>
+
+<p>
+You need to do a demonstration to me at the arranged date.
+</p>
+
+<p>
+This project could be done in groups of 2 or 3 students. Individual work is also fine.
+</p>
+
+
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.6.6.4169-61 "></script><script type="text/javascript">D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>
